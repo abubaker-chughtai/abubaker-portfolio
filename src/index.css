@@ -20,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   overflow-x: hidden;
   background:
     radial-gradient(circle at 78% 8%, rgb(61 111 255 / 0.12), transparent 30rem),
@@ -28,6 +28,11 @@ body {
   color: var(--color-cream);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-width: 0;
+  overflow-x: clip;
 }
 
 body::before {
@@ -345,8 +350,29 @@ a, button { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (max-width: 640px) {
-  .chip-a { left: -0.5rem; }
-  .chip-b { right: -0.5rem; }
-  .portrait-orbit { inset: -1.25rem; }
+  .hero-grid {
+    transform: perspective(700px) rotateX(58deg) translateY(-8%) scale(0.85);
+  }
+  .portrait-shell {
+    border-radius: 1.5rem;
+    transform: none;
+    animation-duration: 8s;
+  }
+  .portrait-shell img { border-radius: 1.5rem; }
+  .chip-a { left: 0.35rem; }
+  .chip-b { right: 0.35rem; }
+  .portrait-orbit { inset: -0.75rem; }
   .cursor-aurora { display: none; }
 }
+
+@media (hover: none), (pointer: coarse) {
+  .project-card,
+  .project-card > * {
+    transform: none !important;
+  }
+  .project-card::before,
+  .shine::after {
+    display: none;
+  }
+}
+
