@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-8 font-mono text-xs tracking-[0.28em] text-blue uppercase">Engineer · Builder · Explorer</p>
-            <h1 className="hero-title mt-4 max-w-full font-display text-[clamp(2.3rem,11.2vw,4.75rem)] leading-[0.9] font-extrabold tracking-[-0.05em] text-cream lg:text-[6.6rem]">
+            <h1 className="hero-title relative z-20 mt-4 max-w-full font-display text-[clamp(2.3rem,11.2vw,4.75rem)] leading-[0.9] font-extrabold tracking-[-0.05em] text-cream lg:text-[5.65rem] xl:text-[6.1rem]">
               {profile.firstName}
               <br />
               <span className="bg-gradient-to-r from-blue via-sky-300 to-cream bg-clip-text text-transparent">

@@ -1,8 +1,8 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Github } from "lucide-react";
 import ProjectVisual from "./ProjectVisual.jsx";
 import TiltCard from "./TiltCard.jsx";
 
-export default function ProjectCard({ project, featured = false }) {
+export default function ProjectCard({ project, featured = false, index = 0 }) {
   return (
     <TiltCard className="h-full">
     <article
@@ -18,14 +18,43 @@ export default function ProjectCard({ project, featured = false }) {
         <ProjectVisual visual={project.visual} title={project.title} />
       </div>
 
-      <div className={`flex flex-1 flex-col p-6 ${featured ? "md:p-8" : ""}`}>
-        {featured ? (
-          <p className="mb-2 text-xs tracking-[0.2em] text-blue uppercase">Featured</p>
-        ) : null}
+      <div className={`flex min-w-0 flex-1 flex-col p-6 ${featured ? "md:p-8" : ""}`}>
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <p className="text-xs tracking-[0.18em] text-blue uppercase">
+            {featured ? "Featured case study" : project.category}
+          </p>
+          <span className="font-mono text-xs text-mute">{String(index + 1).padStart(2, "0")}</span>
+        </div>
         <h3 className="font-display text-xl font-semibold text-cream md:text-2xl">
           {project.title}
         </h3>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-mute">{project.description}</p>
+
+        {featured ? (
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            {[
+              ["Challenge", project.challenge],
+              ["Built", project.contribution],
+              ["Outcome", project.outcome],
+            ].map(([label, copy]) => (
+              <div key={label} className="project-proof rounded-2xl border border-line bg-night/35 p-4">
+                <p className="text-xs font-semibold tracking-wide text-blue uppercase">{label}</p>
+                <p className="mt-2 text-sm leading-relaxed text-mute">{copy}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <details className="project-details mt-5 border-t border-line pt-4">
+            <summary className="cursor-pointer list-none text-sm font-medium text-cream">
+              Project breakdown <span className="ml-1 text-blue">+</span>
+            </summary>
+            <div className="mt-4 space-y-3 text-sm leading-relaxed text-mute">
+              <p><b className="text-cream">Challenge:</b> {project.challenge}</p>
+              <p><b className="text-cream">Contribution:</b> {project.contribution}</p>
+              <p className="flex gap-2"><CheckCircle2 className="mt-0.5 shrink-0 text-blue" size={15} /><span>{project.outcome}</span></p>
+            </div>
+          </details>
+        )}
         <div className="mt-5 flex flex-wrap gap-2">
           {project.tech.map((tag) => (
             <span
@@ -57,7 +86,9 @@ export default function ProjectCard({ project, featured = false }) {
               <Github size={14} /> Code
             </a>
           ) : (
-            <span className="text-xs text-mute/70">Academic / local build</span>
+            <span className="inline-flex items-center gap-1.5 text-xs text-mute/80">
+              <CheckCircle2 size={13} className="text-blue" /> Documented academic build
+            </span>
           )}
         </div>
       </div>
@@ -65,3 +96,4 @@ export default function ProjectCard({ project, featured = false }) {
     </TiltCard>
   );
 }
+

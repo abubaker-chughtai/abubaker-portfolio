@@ -30,7 +30,14 @@
       name="twitter:image"
       content="https://abubaker07-creator.github.io/abubaker-portfolio/og-image.jpg"
     />
-    <title>Abubaker Chughtai — Software Engineer</title>
+    <script>
+      (() => {
+        const saved = localStorage.getItem("portfolio-theme");
+        const preferred = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.dataset.theme = saved || preferred;
+      })();
+    </script>
+    <title>Abubaker Chughtai — Python, FastAPI & AI Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,6 +66,7 @@
         },
         "sameAs": [
           "https://www.linkedin.com/in/abubaker-chughtai-a386aa337",
+          "https://github.com/abubaker07-creator",
           "https://www.facebook.com/share/18eg42Yd5H/",
           "https://www.instagram.com/abubakerchughtai07"
         ]

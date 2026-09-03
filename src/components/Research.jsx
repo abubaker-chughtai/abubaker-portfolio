@@ -14,6 +14,7 @@ export default function Research() {
           <article className="relative overflow-hidden rounded-3xl border border-line bg-card p-8 md:p-12">
             <div className="orb orb-a !top-[-160px] !right-[-40px] !opacity-60" />
             <FileText className="relative mb-6 text-blue" size={28} />
+            <p className="relative mb-3 text-xs font-semibold tracking-[0.18em] text-blue uppercase">Course research · IJSRP format</p>
             <p className="relative font-display text-2xl leading-snug font-semibold md:text-4xl">
               “{research.title}”
             </p>
@@ -27,3 +28,4 @@ export default function Research() {
     </section>
   );
 }
+

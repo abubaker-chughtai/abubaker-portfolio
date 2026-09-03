@@ -1,10 +1,10 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { profile } from "../data/profile.js";
 
 const socials = [
   { label: "LinkedIn", href: profile.linkedin, Icon: Linkedin },
-  { label: "Facebook", href: profile.facebook, Icon: Facebook },
-  { label: "Instagram", href: profile.instagram, Icon: Instagram },
+  { label: "GitHub", href: profile.github, Icon: Github },
+  { label: "Email", href: `mailto:${profile.email}`, Icon: Mail },
 ];
 
 export default function SocialLinks({ className = "" }) {
@@ -25,3 +25,4 @@ export default function SocialLinks({ className = "" }) {
     </div>
   );
 }
+

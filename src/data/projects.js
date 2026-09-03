@@ -3,6 +3,10 @@ export const projects = [
     id: "sentiment",
     featured: true,
     title: "Full-Stack Sentiment Analysis",
+    category: "AI Engineering",
+    challenge: "Turn free-form movie reviews into clear sentiment predictions through a usable interface.",
+    contribution: "Connected DistilBERT inference to a FastAPI service and browser-based frontend.",
+    outcome: "An end-to-end ML delivery project covering model serving, API design, and user interaction.",
     description:
       "Movie review sentiment classifier powered by DistilBERT, served through a FastAPI backend and a clean HTML frontend.",
     tech: ["Python", "FastAPI", "DistilBERT", "HTML"],
@@ -14,6 +18,10 @@ export const projects = [
     id: "libtrack",
     featured: false,
     title: "LibTrack — Library Management",
+    category: "Database Systems",
+    challenge: "Model books, members, circulation, and operational rules without duplicated data.",
+    contribution: "Created the EER model, normalized the schema through 3NF, and designed stored procedures.",
+    outcome: "A structured relational foundation for consistent library operations and reporting.",
     description:
       "Online library system with EER diagrams, a schema normalized through 3NF, and stored procedures for core operations.",
     tech: ["SQL", "Database Design"],
@@ -25,6 +33,10 @@ export const projects = [
     id: "waste",
     featured: false,
     title: "Smart Waste Management",
+    category: "Requirements Engineering",
+    challenge: "Translate a real civic-service problem into a clear, buildable software specification.",
+    contribution: "Developed requirements, system flows, and formal SRS documentation.",
+    outcome: "A traceable system concept connecting user needs with implementation-ready design.",
     description:
       "Software engineering project covering requirements elicitation, system design, and documentation for smart waste collection.",
     tech: ["Software Engineering", "SRS"],
@@ -36,6 +48,10 @@ export const projects = [
     id: "shopping",
     featured: false,
     title: "Online Shopping System",
+    category: "Database Systems",
+    challenge: "Represent customers, products, orders, and transactions in a reliable data model.",
+    contribution: "Designed relational entities, links, constraints, and transactional workflows.",
+    outcome: "A database-first commerce design built around data integrity and maintainable operations.",
     description:
       "Database-driven shopping platform designed around relational modeling and transactional flows.",
     tech: ["SQL", "Database Design"],
@@ -47,6 +63,10 @@ export const projects = [
     id: "traffic",
     featured: false,
     title: "Traffic Light Controller",
+    category: "Digital Logic",
+    challenge: "Automate a one-way traffic sequence using only digital-logic components.",
+    contribution: "Mapped timing states into a logic-gate-based control circuit.",
+    outcome: "A working hardware-logic concept demonstrating sequencing and state control.",
     description:
       "Automated one-way traffic light system built from logic gates as a digital logic design project.",
     tech: ["Digital Logic Design"],
@@ -58,6 +78,10 @@ export const projects = [
     id: "directory",
     featured: false,
     title: "Phone Directory",
+    category: "Data Structures",
+    challenge: "Store and retrieve contact records efficiently through a simple application.",
+    contribution: "Implemented record creation, search, update, and organization in C++.",
+    outcome: "A practical demonstration of data structures applied to everyday record management.",
     description:
       "Data-structures-based phone directory application focused on efficient search and record management.",
     tech: ["C++", "DSA"],
@@ -69,6 +93,10 @@ export const projects = [
     id: "calculator",
     featured: false,
     title: "Assembly Calculator",
+    category: "Low-Level Computing",
+    challenge: "Perform calculator operations within the constraints of 8086 assembly.",
+    contribution: "Implemented input handling, arithmetic routines, and output in EMU8086.",
+    outcome: "A functional low-level program demonstrating registers, control flow, and arithmetic logic.",
     description:
       "A working calculator implemented in Assembly language using EMU8086.",
     tech: ["COAL", "EMU8086"],
@@ -77,3 +105,4 @@ export const projects = [
     visual: "asm",
   },
 ];
+

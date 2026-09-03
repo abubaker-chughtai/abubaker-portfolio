@@ -43,6 +43,9 @@ export default function Skills() {
                       </span>
                     ))}
                   </div>
+                  <p className="mt-6 border-t border-line pt-4 text-sm leading-relaxed text-mute">
+                    {group.evidence}
+                  </p>
                 </article>
               </Reveal>
             );
@@ -52,3 +55,4 @@ export default function Skills() {
     </section>
   );
 }
+

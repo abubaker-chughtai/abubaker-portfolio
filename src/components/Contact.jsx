@@ -1,4 +1,4 @@
-import { ArrowUpRight, Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 import { profile } from "../data/profile.js";
 import Reveal from "./Reveal.jsx";
 
@@ -18,17 +18,10 @@ const channels = [
     external: true,
   },
   {
-    label: "Facebook",
-    href: profile.facebook,
-    value: "Abubaker Chughtai",
-    Icon: Facebook,
-    external: true,
-  },
-  {
-    label: "Instagram",
-    href: profile.instagram,
-    value: "@abubakerchughtai07",
-    Icon: Instagram,
+    label: "GitHub",
+    href: profile.github,
+    value: "abubaker07-creator",
+    Icon: Github,
     external: true,
   },
   {
@@ -67,7 +60,7 @@ export default function Contact() {
       </Reveal>
 
       <Reveal delay={140}>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {channels.map(({ label, href, value, Icon, external }) => (
             <a
               key={label}
