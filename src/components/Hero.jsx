@@ -12,8 +12,8 @@ export default function Hero() {
 
       <div className="hero-grid" aria-hidden="true" />
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-          <div>
+        <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3 text-sm text-mute">
               <span className="availability inline-flex items-center gap-2 rounded-full border border-line bg-cream/5 px-3 py-1">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue" />
@@ -26,7 +26,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-8 font-mono text-xs tracking-[0.28em] text-blue uppercase">Engineer · Builder · Explorer</p>
-            <h1 className="hero-title mt-4 font-display text-[14vw] leading-[0.88] font-extrabold tracking-[-0.05em] text-cream sm:text-[11vw] lg:text-[6.6rem]">
+            <h1 className="hero-title mt-4 max-w-full font-display text-[clamp(2.3rem,11.2vw,4.75rem)] leading-[0.9] font-extrabold tracking-[-0.05em] text-cream lg:text-[6.6rem]">
               {profile.firstName}
               <br />
               <span className="bg-gradient-to-r from-blue via-sky-300 to-cream bg-clip-text text-transparent">
@@ -34,7 +34,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-lg text-mute sm:text-xl">
+            <p className="mt-8 max-w-xl text-base leading-relaxed text-mute sm:text-xl">
               {profile.title}
               <span className="mx-2 text-blue">/</span>
               {profile.tagline}
@@ -66,7 +66,7 @@ export default function Hero() {
             <SocialLinks className="mt-6" />
           </div>
 
-          <div className="portrait-stage relative mx-auto w-full max-w-[24rem]">
+          <div className="portrait-stage relative mx-auto min-w-0 w-full max-w-[24rem]">
             <div className="portrait-orbit" aria-hidden="true"><span /><span /><span /></div>
             <div className="portrait-shell">
               <div className="portrait-number" aria-hidden="true">01</div>
@@ -109,3 +109,4 @@ export default function Hero() {
     </section>
   );
 }
+
