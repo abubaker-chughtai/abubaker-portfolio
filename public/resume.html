@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abubaker Chughtai — Resume</title>
+    <style>
+      :root {
+        --ink: #111827;
+        --mute: #4b5563;
+        --line: #e5e7eb;
+        --blue: #2563eb;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background: #f3f4f6;
+      }
+      .sheet {
+        max-width: 800px;
+        margin: 32px auto;
+        background: #fff;
+        padding: 48px 56px;
+        box-shadow: 0 10px 40px rgb(0 0 0 / 0.08);
+      }
+      h1 { margin: 0; font-size: 32px; letter-spacing: -0.03em; }
+      .title { color: var(--blue); margin: 6px 0 10px; font-size: 15px; }
+      .meta { color: var(--mute); font-size: 13px; }
+      h2 {
+        font-size: 13px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 6px;
+        margin: 28px 0 12px;
+      }
+      p, li { font-size: 14px; line-height: 1.55; }
+      ul { margin: 6px 0 0; padding-left: 18px; }
+      .job { margin-bottom: 14px; }
+      .row { display: flex; justify-content: space-between; gap: 12px; }
+      .muted { color: var(--mute); font-size: 13px; }
+      .actions { text-align: center; margin: 16px; }
+      button {
+        border: 0;
+        background: var(--blue);
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .head { display: flex; gap: 20px; align-items: center; }
+      .photo { width: 92px; height: 112px; object-fit: cover; object-position: center 12%; border-radius: 8px; }
+      @media print {
+        body { background: #fff; }
+        .sheet { margin: 0; box-shadow: none; padding: 0; }
+        .actions { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="actions">
+      <button onclick="window.print()">Download / Print PDF</button>
+    </div>
+    <article class="sheet">
+      <div class="head">
+        <img class="photo" src="./abubaker-profile.jpg" alt="Abubaker Chughtai" />
+        <div>
+          <h1>Abubaker Chughtai</h1>
+          <p class="title">BS Software Engineering Student @ UMT Lahore | Software Development | AI | Full-Stack</p>
+          <p class="meta">
+            Lahore, Punjab, Pakistan · 0323 1011927 ·
+            mabubakerchughtai120@gmail.com ·
+            linkedin.com/in/abubaker-chughtai-a386aa337 ·
+            facebook.com/share/18eg42Yd5H ·
+            instagram.com/abubakerchughtai07 ·
+            abubaker07-creator.github.io/abubaker-portfolio
+          </p>
+        </div>
+      </div>
+
+      <h2>About</h2>
+      <p>
+        Software Engineering student at the University of Management and Technology (UMT), Lahore, passionate about building
+        practical and meaningful software solutions. Current focus includes software development, AI, full-stack technologies,
+        database systems, requirements engineering, and system design.
+      </p>
+
+      <h2>Skills</h2>
+      <p>Python, C++, HTML, CSS, JavaScript, SQL, FastAPI, DistilBERT, Relational Database Design, Requirements Engineering, Customer Service, Google Workspace, Microsoft Office</p>
+
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="row">
+          <strong>Customer Service Sales Representative — Pakistan Law Bot (Pixel PK)</strong>
+          <span class="muted">Jan 2026 — Present</span>
+        </div>
+        <ul>
+          <li>Respond to customer queries and provide support for Pakistan LawBot.</li>
+          <li>Maintain and update lead records in CRM and Google Sheets for accurate tracking and follow-up.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="row"><strong>Educational Consultant — Four Partner Institutions</strong><span class="muted">Jan 2024 — Present</span></div>
+        <ul>
+          <li>Manage school registration, BISE Lahore affiliation, and 9th/10th grade admissions across four partner institutions.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="row"><strong>Account Manager — Unique Science Academy (Shama Chapter)</strong><span class="muted">Jul 2024 — Dec 2025</span></div>
+        <ul>
+          <li>Managed academy accounts, day-to-day administration, and organized institutional records.</li>
+        </ul>
+      </div>
+
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Full-Stack Sentiment Analysis</strong> — DistilBERT movie-review classifier with FastAPI + HTML.</li>
+        <li><strong>LibTrack</strong> — Library management system with EER diagrams, 3NF schema, and stored procedures.</li>
+        <li><strong>Smart Waste Management System</strong> — Requirements elicitation, design, and SRS documentation.</li>
+        <li><strong>Online Shopping System</strong> — Database-driven shopping project.</li>
+        <li><strong>Traffic Light Controller</strong> — One-way traffic light using logic gates (DLD).</li>
+        <li><strong>Phone Directory</strong> — C++ / DSA application.</li>
+        <li><strong>Assembly Calculator</strong> — Calculator in Assembly (EMU8086).</li>
+      </ul>
+
+      <h2>Education</h2>
+      <p><strong>BS Software Engineering</strong> — University of Management and Technology, Lahore — Oct 2024–Present</p>
+      <p><strong>ICS (Physics)</strong> — Crescent Model Higher Secondary School — Aug 2022–Apr 2024</p>
+
+      <h2>Research</h2>
+      <p><strong>Effect of Incomplete Requirements on Software Quality</strong> — Co-authored with Arbab Rasool (IJSRP template).</p>
+
+    </article>
+  </body>
+</html>
