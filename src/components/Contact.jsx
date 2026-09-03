@@ -59,10 +59,10 @@ export default function Contact() {
       <Reveal delay={80}>
         <a
           href={`mailto:${profile.email}`}
-          className="group mt-10 inline-flex items-center gap-3 font-display text-xl text-cream sm:text-3xl"
+          className="group mt-10 flex max-w-full items-center gap-2 font-display text-[clamp(0.875rem,4.3vw,1.875rem)] text-cream break-all sm:gap-3"
         >
           {profile.email}
-          <ArrowUpRight className="text-blue transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          <ArrowUpRight className="shrink-0 text-blue transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </Reveal>
 
@@ -86,3 +86,4 @@ export default function Contact() {
     </section>
   );
 }
+
