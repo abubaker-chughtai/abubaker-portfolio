@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abubaker07-creator.github.io/abubaker-portfolio/sitemap.xml
+
