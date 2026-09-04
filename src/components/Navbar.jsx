@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import photo from "../assets/abubaker-profile.jpg";
+import { profile } from "../data/profile.js";
 import ThemeToggle from "./ThemeToggle.jsx";
 
 const links = [
@@ -40,8 +40,10 @@ export default function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-[4.5rem] sm:px-8">
         <a href="#top" className="flex items-center gap-2.5 font-display text-lg font-bold tracking-tight text-cream">
           <img
-            src={photo}
+            src={profile.photoUrl}
             alt=""
+            width="32"
+            height="32"
             className="h-8 w-8 rounded-full object-cover object-[center_18%] ring-1 ring-white/20"
           />
           AC<span className="text-blue">.</span>
