@@ -1,5 +1,4 @@
 import { profile, stats } from "../data/profile.js";
-import photo from "../assets/abubaker-profile.jpg";
 import Reveal from "./Reveal.jsx";
 import SectionHeader from "./SectionHeader.jsx";
 
@@ -18,8 +17,11 @@ export default function About() {
       <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr_0.8fr] lg:items-start">
         <Reveal className="hidden lg:block">
           <img
-            src={photo}
-            alt={profile.name}
+            src={profile.photoUrl}
+            alt={`${profile.name} working on software engineering projects`}
+            width="1024"
+            height="1024"
+            loading="lazy"
             className="hidden aspect-[4/5] w-full max-w-[16rem] rounded-3xl object-cover object-[center_12%] ring-1 ring-white/10 lg:block"
           />
         </Reveal>

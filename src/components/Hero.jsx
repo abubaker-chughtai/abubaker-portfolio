@@ -1,7 +1,6 @@
 import { ArrowDownRight, ArrowUpRight, Download, MapPin } from "lucide-react";
 import { profile } from "../data/profile.js";
 import { marquee } from "../data/skills.js";
-import photo from "../assets/abubaker-profile.jpg";
 import SocialLinks from "./SocialLinks.jsx";
 
 export default function Hero() {
@@ -71,8 +70,11 @@ export default function Hero() {
             <div className="portrait-shell">
               <div className="portrait-number" aria-hidden="true">01</div>
               <img
-                src={photo}
+                src={profile.photoUrl}
                 alt={`${profile.name}, software engineering student`}
+                width="1024"
+                height="1024"
+                fetchPriority="high"
                 className="relative z-10 aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_12%]"
               />
               <div className="portrait-scan" aria-hidden="true" />

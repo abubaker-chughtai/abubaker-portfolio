@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Abubaker Chughtai — Software Engineering student in Lahore building full-stack and AI-powered products."
+      content="Portfolio of Abubaker Chughtai, a software engineering student in Lahore building Python, FastAPI, AI/ML, database, and full-stack projects."
     />
+    <meta name="author" content="Abubaker Chughtai" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="google-site-verification" content="LaHfPSH6GSRACRhPYqxeYPp1fQfHQYkeCS9ZIJy9FfM" />
     <meta name="theme-color" content="#05070c" />
+    <meta name="color-scheme" content="dark light" />
     <link rel="canonical" href="https://abubaker07-creator.github.io/abubaker-portfolio/" />
-    <meta property="og:title" content="Abubaker Chughtai — Portfolio" />
+    <link rel="alternate" hreflang="en" href="https://abubaker07-creator.github.io/abubaker-portfolio/" />
+    <link rel="alternate" hreflang="x-default" href="https://abubaker07-creator.github.io/abubaker-portfolio/" />
+    <meta property="og:title" content="Abubaker Chughtai | Python, FastAPI & AI Developer" />
     <meta
       property="og:description"
-      content="Software Engineering student | Full-Stack & AI Enthusiast. Projects, experience, and research."
+      content="Software engineering portfolio featuring Python, FastAPI, AI/ML, database systems, full-stack projects, experience, and research."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_PK" />
     <meta property="og:site_name" content="Abubaker Chughtai — Portfolio" />
     <meta property="og:url" content="https://abubaker07-creator.github.io/abubaker-portfolio/" />
     <meta
       property="og:image"
       content="https://abubaker07-creator.github.io/abubaker-portfolio/og-image.jpg"
     />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Portrait of Abubaker Chughtai" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Abubaker Chughtai — Portfolio" />
+    <meta name="twitter:title" content="Abubaker Chughtai | Python, FastAPI & AI Developer" />
+    <meta
+      name="twitter:description"
+      content="Software engineering portfolio featuring Python, FastAPI, AI/ML, database systems, full-stack projects, experience, and research."
+    />
     <meta
       name="twitter:image"
       content="https://abubaker07-creator.github.io/abubaker-portfolio/og-image.jpg"
     />
+    <meta name="twitter:image:alt" content="Portrait of Abubaker Chughtai" />
     <script>
       (() => {
         const saved = localStorage.getItem("portfolio-theme");
@@ -37,7 +50,7 @@
         document.documentElement.dataset.theme = saved || preferred;
       })();
     </script>
-    <title>Abubaker Chughtai — Python, FastAPI & AI Portfolio</title>
+    <title>Abubaker Chughtai | Python, FastAPI & AI Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,28 +60,67 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Abubaker Chughtai",
-        "url": "https://abubaker07-creator.github.io/abubaker-portfolio/",
-        "image": "https://abubaker07-creator.github.io/abubaker-portfolio/abubaker-profile.jpg",
-        "jobTitle": "Software Engineering Student",
-        "description": "Software Engineering student at UMT Lahore focused on software development, AI, and full-stack technologies.",
-        "email": "mailto:mabubakerchughtai120@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lahore",
-          "addressRegion": "Punjab",
-          "addressCountry": "PK"
-        },
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Management and Technology"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/abubaker-chughtai-a386aa337",
-          "https://github.com/abubaker07-creator",
-          "https://www.facebook.com/share/18eg42Yd5H/",
-          "https://www.instagram.com/abubakerchughtai07"
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#profile-page",
+            "url": "https://abubaker07-creator.github.io/abubaker-portfolio/",
+            "name": "Abubaker Chughtai | Python, FastAPI & AI Developer",
+            "description": "Portfolio of Abubaker Chughtai, a software engineering student in Lahore building Python, FastAPI, AI/ML, database, and full-stack projects.",
+            "inLanguage": "en-PK",
+            "dateModified": "2026-09-04",
+            "mainEntity": { "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#person" },
+            "isPartOf": { "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#website" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#website",
+            "url": "https://abubaker07-creator.github.io/abubaker-portfolio/",
+            "name": "Abubaker Chughtai Portfolio",
+            "inLanguage": "en-PK",
+            "publisher": { "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://abubaker07-creator.github.io/abubaker-portfolio/#person",
+            "name": "Abubaker Chughtai",
+            "url": "https://abubaker07-creator.github.io/abubaker-portfolio/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://abubaker07-creator.github.io/abubaker-portfolio/abubaker-profile.jpg",
+              "width": 1024,
+              "height": 1024
+            },
+            "jobTitle": "Software Engineering Student",
+            "description": "Software engineering student at UMT Lahore focused on Python, FastAPI, AI/ML, database systems, and full-stack development.",
+            "email": "mailto:mabubakerchughtai120@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lahore",
+              "addressRegion": "Punjab",
+              "addressCountry": "PK"
+            },
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Management and Technology",
+              "alternateName": "UMT Lahore"
+            },
+            "knowsAbout": [
+              "Python",
+              "FastAPI",
+              "Artificial Intelligence",
+              "Machine Learning",
+              "Database Design",
+              "Full-Stack Development",
+              "Software Requirements Engineering"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/abubaker-chughtai-a386aa337",
+              "https://github.com/abubaker07-creator",
+              "https://www.facebook.com/share/18eg42Yd5H/",
+              "https://www.instagram.com/abubakerchughtai07"
+            ]
+          }
         ]
       }
     </script>
