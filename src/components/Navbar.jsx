@@ -44,6 +44,7 @@ export default function Navbar() {
             alt=""
             width="32"
             height="32"
+            decoding="async"
             className="h-8 w-8 rounded-full object-cover object-[center_18%] ring-1 ring-white/20"
           />
           AC<span className="text-blue">.</span>
@@ -101,4 +102,3 @@ export default function Navbar() {
     </header>
   );
 }
-

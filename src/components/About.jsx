@@ -22,6 +22,7 @@ export default function About() {
             width="1024"
             height="1024"
             loading="lazy"
+            decoding="async"
             className="hidden aspect-[4/5] w-full max-w-[16rem] rounded-3xl object-cover object-[center_12%] ring-1 ring-white/10 lg:block"
           />
         </Reveal>

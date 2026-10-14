@@ -75,6 +75,7 @@ export default function Hero() {
                 width="1024"
                 height="1024"
                 fetchPriority="high"
+                decoding="async"
                 className="relative z-10 aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_12%]"
               />
               <div className="portrait-scan" aria-hidden="true" />
@@ -111,4 +112,3 @@ export default function Hero() {
     </section>
   );
 }
-
