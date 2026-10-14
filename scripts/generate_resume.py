@@ -59,7 +59,7 @@ header_right = Paragraph(
     "0323 1011927 | mabubakerchughtai120@gmail.com<br/>"
     "<link href='https://www.linkedin.com/in/abubaker-chughtai-a386aa337' color='#255DD9'>LinkedIn</link> | "
     "<link href='https://github.com/abubaker07-creator' color='#255DD9'>GitHub</link> | "
-    "<link href='https://abubaker07-creator.github.io/abubaker-portfolio/' color='#255DD9'>Portfolio</link>",
+    "<link href='https://abubakerchughtai.me/' color='#255DD9'>Portfolio</link>",
     styles["Contact"],
 )
 header = Table([[header_left, header_right]], colWidths=[105 * mm, 75 * mm])
@@ -104,4 +104,3 @@ story.append(Paragraph("<b>Course research:</b> Effect of Incomplete Requirement
 doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=15 * mm, leftMargin=15 * mm, topMargin=13 * mm, bottomMargin=12 * mm, title="Abubaker Chughtai - Resume", author="Abubaker Chughtai")
 doc.build(story)
 print(OUTPUT)
-

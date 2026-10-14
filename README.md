@@ -16,7 +16,7 @@ npm run build
 npm run preview
 ```
 
-Live site: https://abubakerchughtai.vercel.app/
+Live site: https://abubakerchughtai.me/
 
 The original GitHub repository remains the source repository. Run `npm run build` and deploy the `dist` folder to the existing Vercel project `abubakerchughtai`. Production currently uses manual deployment; GitHub pushes do not automatically update Vercel.
 

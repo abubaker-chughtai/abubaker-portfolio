@@ -14,7 +14,7 @@ export const profile = {
   github: "https://github.com/abubaker07-creator",
   facebook: "https://www.facebook.com/share/18eg42Yd5H/",
   instagram: "https://www.instagram.com/abubakerchughtai07",
-  siteUrl: "https://abubakerchughtai.vercel.app/",
+  siteUrl: "https://abubakerchughtai.me/",
   photoUrl: `${import.meta.env.BASE_URL}abubaker-profile.jpg`,
   resumeUrl: `${import.meta.env.BASE_URL}Abubaker-Chughtai-Resume.pdf`,
   bio: "I’m a Software Engineering student at the University of Management and Technology (UMT), Lahore, passionate about building practical and meaningful software. My work spans FastAPI, machine-learning deployment, database systems, requirements engineering, and system design. Experience in customer service and educational consulting has also sharpened how I understand users, communicate clearly, and solve problems with empathy.",
@@ -30,4 +30,3 @@ export const stats = [
   { value: "07", label: "Shipped projects" },
   { value: "03", label: "Professional roles" },
 ];
-
